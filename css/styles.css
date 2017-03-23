@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+/* COMIENZO Contenedor General */
+.containerGeneral {
+  max-width: 2500px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* FIN Contenedor General */
+
+
+body {
+  /*background-image: url("../images/fondo.jpg");*/
+}
+
+
+/* COMIENZO Menu Login */
+.main-login {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 900;
+  position: absolute;
+  top: 40px;
+  right: 600px;
+}
+
+.main-login ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.main-login li a {
+  color: #282722;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  flex-grow: 1;
+  text-align: center;
+}
+/* FIN Menu Login */
+
+
+/* COMIENZO Menu Idiomas */
+.main-language {
+  font-family: Verdana, Geneva, sans-serif;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.main-language ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.main-language li a {
+  color: #282722;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  flex-grow: 1;
+  text-align: center;
+}
+/* FIN Menu Idiomas */
+
+
+/* COMIENZO Menu Principal */
+.main-nav {
+  padding: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  border-style: double; border-width: 4px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(226, 217, 217, 0.69); /*#e9e5dc;*/
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-nav li a {
+  color: #282722;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  flex-grow: 1;
+  text-align: center;
+}
+.main-nav li a:hover {
+  background: #f7eddc;
+  color: #1b1d1a;
+}
+/* FIN Menu Idiomas */
+
+
+/* COMIENZO Carrito de compras */
+.carritoDeCompras {
+  float: right;
+  width: 50px;
+  height: 50px;
+}
+/* FIN Carrito de compras */
+
+
+
+/* COMIENZO H1, H2 , H3 ..... */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  font-family: Tahoma, sans-serif;
+  color: #3a5e8f;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  font-family: Tahoma, sans-serif;
+  color: #3a5e8f;
+  background-color: rgba(226, 217, 217, 0.69);
+}
+/* FIN H1, H2 , H3 ..... */
+
+/* COMIENZO Container Principal */
+.containerPrincipal {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+/* FIN Container Principal */
+
+
+/* COMIENZO Banner Principal */
+.bannerPrincipal {
+  margin: auto;
+  display: block;
+}
+/* FIN Banner Principal */
+
+
+/* COMIENZO Cajas Home */
+.caja1Home {
+  border-style: double; border-width: 4px;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+}
+
+.caja2Home {
+  border-style: double; border-width: 4px;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+}
+
+.caja3Home {
+  border-style: double; border-width: 4px;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+}
+
+.caja4Home {
+  border-style: double; border-width: 4px;
+  width: 20%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  float: left;
+}
+/* FIN Cajas Home */
+
+
+/* COMIENZO Footer */
+footer {
+  font-family: sans-serif;
+  border-style: double; border-width: 4px;
+  border-radius: 40px 40px 40px 40px;
+  background: rgba(226, 217, 217, 0.69); /*#e9e5dc;*/
+  clear: both;
+  text-align: center;
+  color: #0f1839;
+  font-weight: 500;
+}
+footer p {
+  margin: 5px;
+  padding: 5px;
+}
+/* FIN Footer */
