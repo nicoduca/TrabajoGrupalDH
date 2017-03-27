@@ -206,3 +206,36 @@ footer p {
   padding: 5px;
 }
 /* FIN Footer */
+
+
+/* COMIENZO Tabla Formulario Registro */
+.tablaRegistro {
+  width: 50%;
+  margin: auto;
+  /* CSS Reference de Codrops */
+	border: 20px dashed red;
+	border: 10px dotted #4538ad;
+	border: 10px groove #4538ad;
+  background-color: #F5F5F5;
+  font-weight: 500;
+  font-family: Verdana;
+  font-size: 14px;
+}
+.tablaRegistro td{
+  padding: 15px;
+  border: 1px solid #b4c8df;
+}
+.tablaRegistro label{
+  margin-right: 15px;
+}
+input:focus {
+  background-color: #45688b;
+  color: white;
+}
+.botonesFormulario button{
+  border: 0;
+}
+textarea{
+  resize: vertical;
+}
+/* FIN Tabla Formulario Registro */
