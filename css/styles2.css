@@ -11,6 +11,10 @@
 }
 /* FIN Contenedor General */
 
+.containerPrincipal {
+  height: 1000px;
+
+}
 body {
   margin: 0;
   padding: 0;
@@ -302,3 +306,76 @@ color: orange;
   100% { left: -300%; }
 }
 /* FIN Slider Home */
+
+
+/* COMIENZO H1, H2 , H3 ..... */
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #232F3E;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  font-family: Tahoma, sans-serif;
+  color: #3a5e8f;
+  background-color: rgba(226, 217, 217, 0.69);
+}
+/* FIN H1, H2 , H3 ..... */
+
+
+
+/* COMIENZO Tabla Formulario Registro */
+.tablaRegistro {
+  width: 50%;
+  margin: auto;
+  /* CSS Reference de Codrops */
+	border: 20px dashed red;
+	border: 10px dotted #232F3E;
+	border: 10px groove #232F3E;
+  background-color: #F5F5F5;
+  font-weight: 500;
+  font-family: Verdana;
+  font-size: 14px;
+}
+.tablaRegistro td{
+  padding: 15px;
+  border: 1px solid #232F3E;
+}
+.tablaRegistro label{
+  margin-right: 15px;
+}
+input:focus {
+  background-color: #232F3E;
+  color: white;
+}
+.botonesFormulario button{
+  border: 0;
+}
+textarea{
+  resize: vertical;
+}
+/* FIN Tabla Formulario Registro */
+
+/* COMIENZO Footer */
+footer {
+  font-family: Verdana, Geneva, sans-serif;
+  border-style: double; border-width: 4px;
+  border-radius: 40px 40px 0 0;
+  background-color: #232F3E;
+  clear: both;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 12px;
+  height: 70px;
+}
+footer p {
+  margin: 5px;
+  padding: 5px;
+}
+/* FIN Footer */
