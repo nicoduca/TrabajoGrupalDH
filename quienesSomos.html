@@ -4,43 +4,85 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Loekemeyer - Quienes Somos</title>
+    <title>Loekemeyer - Utensilios para la cocina del hogar y profesional</title>
   </head>
   <body>
       <div class="containerGeneral"> <!-- Abre Container General-->
 
         <header> <!-- Abre header Principal-->
-            <a href="http://www.loekemeyer.com/"><img src="images/logoLoeKemeyer.gif" alt="Logo Loekemeyer" class="logo"></a>
 
-            <div class="main-login">  <!-- Abre Menu Registro/Login Principal-->
-                <ul>
-                  <li><a href="registrarse.html">Registrarse</a></li>
-                  <li><a href="login.html">Login</a></li>
+          <div class="logoPrincipal">
+            <a href="http://www.loekemeyer.com/"><img src="images/logo.png" alt="Logo Loekemeyer"></a>
+          </div>
+
+          <div class="buscador">
+            <!--<img src="images/buscador.png" alt="Buscador">-->
+            <form action="/action_page.php" class="formLogin">
+                  <input type="text" name="buscador" id="buscador" size="60" maxlength="59">
+                  <button type="button" name="buscador">Buscar</button>
+            </form>
+          </div>
+
+          <div class="main-login">  <!-- Abre Menu Registro/Login Principal-->
+              <ul>
+                <li><a href="registrarse.html">Registrarse</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!--<li><form action="/action_page.php" class="formLogin">
+                      <label for="usuario">Usuario:</label><input type="text" name="usuario" id="usuario">
+                      <label for="password">Password:</label><input type="text" name="password" id="password">
+                      <input type="submit" value="Login">
+                    </form>
+                </li>-->
+
+                  <!--<a href="login.html">Login</a></li>-->
+              </ul>
+          </div>  <!-- Cierra Menu Registro/Login Principal-->
+
+          <div class="mainNavVertical">
+            <ul>
+              <li class="nuestrosProductos"><a href="#">Nuestros Productos</a></li><img class="imagenFlecha" src="images/flecha.png" alt="">
+                <ul class="mainNavVerticalCompleto">
+                  <li><a href="#">Línea Abrelatas y Sacacorchos</a></li>
+                  <li><a href="#">Línea peladores, moldeadores y cortadores</a></li>
+                  <li><a href="#">Línea Accesorios</a></li>
+                  <li><a href="#">Línea Utensilios de Acero Inoxidable</a></li>
+                  <li><a href="#">Línea Accesorios Nylon</a></li>
+                  <li><a href="#">Línea Pinzas de Acero Inoxidable y Alambre para cocina</a></li>
+                  <li><a href="#">Utensilios de Madera</a></li>
+                  <li><a href="#">Tablas y Palos de amasar de Madera</a></li>
+                  <li><a href="#">Línea Coladores</a></li>
+                  <li><a href="#">Línea Asado</a></li>
+                  <li><a href="#">Línea mates, bombillas, posapavas</a></li>
+                  <li><a href="#">Línea Utensilios para Repostería</a></li>
                 </ul>
-            </div>  <!-- Cierra Menu Registro/Login Principal-->
+            </ul>
+          </div>
 
-            <div class="main-language">  <!-- Abre Menu Lenguajes-->
-                <ul>
-                    <li><a href="#"><img src="images/banderaArgentina.png" width="40px" height="40px" alt="Idioma Español">Español</a></li>
-                    <li><a href="#"><img src="images/banderaEstadosUnidos.png" width="40px" height="40px" alt="Idioma Ingles">Ingles</a></li>
-                    <li><a href="#"><img src="images/banderaBrasil.png" width="40px" height="40px" alt="Idioma Portugues">Portuges</a></li>
-                    <li><a href="#" alt="Carrito de Compras"><img src="images/carritoDeCompras.png" alt="Carrito de Compras" class="carritoDeCompras"></a></li>
-                </ul>
-            </div>  <!-- Cierra Menu Lenguajes-->
 
-            <nav class="main-nav"> <!-- Abre Menu Principal-->
-      				<ul>
-                  <li><a href="index.html" alt="Pagina Principal Loekemeyer">Home</a></li>
-                  <li><a href="quienesSomos.html" alt="Quienes Somos">Quienes Somos</a></li>
-                  <li><a href="nuestrosProductos.html" alt="Nuestros Productos">Nuestros Productos</a></li>
-                  <li><a href="nuestrosClientes.html" alt="Nuestros Clientes">Nuestros Clientes</a></li>
-                  <li><a href="preguntasFrecuentes.html" alt="Preguntas Frecuentes">Preguntas Frefuentes</a></li>
-                  <li><a href="mapa.html" alt="Mapa de llegada">Mapa</a></li>
-                  <li><a href="contacto.html" alt="Contactenos">Contactenos</a></li>
-      				</ul>
-      			</nav> <!-- Cierra Menu Principal-->
+          <nav class="main-nav"> <!-- Abre Menu Principal-->
+            <ul>
+                <li><a href="index.html" alt="Pagina Principal Loekemeyer">Home</a></li>
+                <li><a href="quienesSomos.html" alt="Quienes Somos">Quienes Somos</a></li>
+                <li><a href="nuestrosClientes.html" alt="Nuestros Clientes">Nuestros Clientes</a></li>
+                <li><a href="preguntasFrecuentes.html" alt="Preguntas Frecuentes">Preguntas Frecuentes</a></li>
+                <li><a href="mapa.html" alt="Mapa de llegada">Mapa</a></li>
+                <li><a href="contacto.html" alt="Contactenos">Contactenos</a></li>
+            </ul>
+          </nav> <!-- Cierra Menu Principal-->
+
+          <div class="main-language">  <!-- Abre Menu Lenguajes-->
+              <ul>
+                  <li><a href="#"><img src="images/banderaArgentina.png" width="20px" height="20px" alt="Idioma Español">Español</a></li>
+                  <li><a href="#"><img src="images/banderaEstadosUnidos.png" width="20px" height="20px" alt="Idioma Ingles">Ingles</a></li>
+              </ul>
+          </div>  <!-- Cierra Menu Lenguajes-->
+
+          <div class="carritoDeCompras">
+              <a href="#" alt="Carrito de Compras"><img src="images/carritoDeCompras.png" alt="Carrito de Compras"></a>
+          </div>
 
         </header> <!-- Cierra header Principal-->
+
 
         <div class="containerPrincipal">  <!-- Abre Container Principal-->
 

@@ -7,23 +7,61 @@
   max-width: 2500px;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  position: relative;
 }
 /* FIN Contenedor General */
 
+.containerPrincipal {
+  height: 1000px;
 
+}
 body {
-  /*background-image: url("../images/fondo.jpg");*/
+  margin: 0;
+  padding: 0;
 }
 
+/* COMIENZO Header */
+header {
+  background-color: #232F3E;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+/* FIN Header */
+
+/* COMIENZO Logo */
+.logoPrincipal {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logoPrincipal img {
+  width: 200px;
+  height: 50px;
+  margin: 0;
+}
+/* FIN Logo */
+
+/* COMIENZO Buscador */
+.buscador {
+  position: absolute;
+  top: 10px;
+  left: 260px;
+  width: 500px;
+}
+.buscador input {
+  border-radius: 50px;
+}
+/* FIN Buscador */
 
 /* COMIENZO Menu Login */
 .main-login {
   font-family: Verdana, Geneva, sans-serif;
-  font-weight: 900;
+  font-weight: 100;
   position: absolute;
-  top: 40px;
-  right: 600px;
+  top: 10px;
+  right: 400px;
 }
 
 .main-login ul {
@@ -34,24 +72,172 @@ body {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
-
 .main-login li a {
-  color: #282722;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  padding-right: 3em;
+  padding-top: 0.2em;
+  flex-grow: 1;
+  text-align: center;
+}
+.main-login li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+.formLogin {
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 10px;
+}
+.formLogin input{
+  margin-right: 20px;
+}
+
+/* FIN Menu Login */
+
+
+/* COMIENZO Menu Productos */
+.navProductos {
+  background-color: green;
+  position: absolute;
+  width: 200px;
+  bottom: 1px;
+  left: 20px;
+  font-style: Verdana,italic, sans-serif;
+  font-size: 20px;
+}
+.navProductos a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.navProductos ul {
+  background-color: white;
+  position: relative;
+  top: 100px;
+}
+
+.nuestrosProductos {
+  background-color: #232F3E;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.nuestrosProductos a{
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nuestrosProductos li a:hover {
+  color: 	#A9A9A9;
+  text-decoration: underline;
+}
+
+.mainNavVertical{
+font-family: Verdana, Geneva, sans-serif;
+font-size: 12px;
+position: absolute;
+overflow: hidden;
+background-color: #FFFFFF;
+top: 70px;
+left: 20px;
+}
+
+.mainNavVertical ul{
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.mainNavVertical ul li{
+margin:0;
+padding:0;
+}
+
+.mainNavVertical ul li a:hover, .mainNavVertical ul li a.selected{
+color: orange;
+
+}
+
+.mainNavVerticalCompleto {
+  width: 290px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  background-color: #FFFFFF;
+  top: 70px;
+  left: 20px;
+  display: none;    /* Sacar esto para ver el menu completo */
+}
+.mainNavVerticalCompleto li a{
+  display:block;
+  color: #494949;
+  padding: 10px 0 10px 0;
+  text-decoration: none;
+  border: 1px solid #cacaca;
+  text-shadow: 0 -1px 1px #cfcfcf; /* CSS text shadow to give text some depth */
+  -moz-transition: all 0.2s ease-in-out; /* Enable CSS transition between property changes */
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagenFlecha {
+  width: 30px;
+
+}
+/* FIN Menu Productos */
+
+
+
+/* COMIENZO Menu Principal */
+.main-nav {
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.main-nav li a {
+  color: #FFFFFF;
   display: block;
   text-decoration: none;
   padding: .5em 1em;
   flex-grow: 1;
   text-align: center;
 }
-/* FIN Menu Login */
+.main-nav li a:hover {
+  color: 	#A9A9A9;
+  text-decoration: underline;
+}
+/* FIN Menu Principal */
 
 
 /* COMIENZO Menu Idiomas */
 .main-language {
   font-family: Verdana, Geneva, sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #FFFFFF;
   position: absolute;
-  top: 20px;
-  right: 50px;
+  top: 60px;
+  right: 60px;
 }
 
 .main-language ul {
@@ -64,68 +250,79 @@ body {
 }
 
 .main-language li a {
-  color: #282722;
+  color: #FFFFFF;
   display: block;
   text-decoration: none;
   padding: .5em 1em;
   flex-grow: 1;
-  text-align: center;
+}
+
+.main-language li a:hover {
+  text-decoration: underline;
+  color: 	#A9A9A9;
 }
 /* FIN Menu Idiomas */
-
-
-/* COMIENZO Menu Principal */
-.main-nav {
-  padding: 1em;
-  font-family: Verdana, Geneva, sans-serif;
-  border-style: double; border-width: 4px;
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background: rgba(226, 217, 217, 0.69); /*#e9e5dc;*/
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.main-nav li a {
-  color: #282722;
-  display: block;
-  text-decoration: none;
-  padding: .5em 1em;
-  flex-grow: 1;
-  text-align: center;
-}
-.main-nav li a:hover {
-  background: #f7eddc;
-  color: #1b1d1a;
-}
-/* FIN Menu Idiomas */
-
 
 /* COMIENZO Carrito de compras */
 .carritoDeCompras {
   float: right;
   width: 50px;
   height: 50px;
+  right: 10px;
+  top: 50px;
+  position: absolute;
+}
+.carritoDeCompras img{
+  width: 50px;
+  height: 50px;
+
 }
 /* FIN Carrito de compras */
 
 
+/* COMIENZO Slider Home */
+.slider img {
+  height: 400px;
+}
+.slider-container {
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s mov--der-izq infinite;
+  animation-play-state: running;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+.slider a img { width: 25%; float: left; }
+
+/*ANIMACIÓN*/
+
+@keyframes mov--der-izq {
+  0% { left: 0%; } /*empieza em posicion inicial*/
+  33.333% { left: 0%; } /*cambio de la primera a la segunda img*/
+  38.333% { left: -100%; } /*se queda parado*/
+  68.333% { left: -100%; } /*cambio de la segunda a la tercera img*/
+  73.333% { left: -200%; } /*se queda parado*/
+  93.333% { left: -200%; } /*Vuelve a mostrar la primera img para que no haya un salto repentino a la primera img*/
+  100% { left: -300%; }
+}
+/* FIN Slider Home */
+
 
 /* COMIENZO H1, H2 , H3 ..... */
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-weight: 900;
-  font-family: Tahoma, sans-serif;
-  color: #3a5e8f;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #232F3E;
 }
 
 h2 {
@@ -138,75 +335,6 @@ h2 {
 }
 /* FIN H1, H2 , H3 ..... */
 
-/* COMIENZO Container Principal */
-.containerPrincipal {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-/* FIN Container Principal */
-
-
-/* COMIENZO Banner Principal */
-.bannerPrincipal {
-  margin: auto;
-  display: block;
-}
-/* FIN Banner Principal */
-
-
-/* COMIENZO Cajas Home */
-.caja1Home {
-  border-style: double; border-width: 4px;
-  width: 20%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  float: left;
-}
-
-.caja2Home {
-  border-style: double; border-width: 4px;
-  width: 20%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  float: left;
-}
-
-.caja3Home {
-  border-style: double; border-width: 4px;
-  width: 20%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  float: left;
-}
-
-.caja4Home {
-  border-style: double; border-width: 4px;
-  width: 20%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  float: left;
-}
-/* FIN Cajas Home */
-
-
-/* COMIENZO Footer */
-footer {
-  font-family: sans-serif;
-  border-style: double; border-width: 4px;
-  border-radius: 40px 40px 40px 40px;
-  background: rgba(226, 217, 217, 0.69); /*#e9e5dc;*/
-  clear: both;
-  text-align: center;
-  color: #0f1839;
-  font-weight: 500;
-}
-footer p {
-  margin: 5px;
-  padding: 5px;
-  font-size: 20px;
-}
-/* FIN Footer */
 
 
 /* COMIENZO Tabla Formulario Registro */
@@ -215,8 +343,8 @@ footer p {
   margin: auto;
   /* CSS Reference de Codrops */
 	border: 20px dashed red;
-	border: 10px dotted #4538ad;
-	border: 10px groove #4538ad;
+	border: 10px dotted #232F3E;
+	border: 10px groove #232F3E;
   background-color: #F5F5F5;
   font-weight: 500;
   font-family: Verdana;
@@ -224,13 +352,13 @@ footer p {
 }
 .tablaRegistro td{
   padding: 15px;
-  border: 1px solid #b4c8df;
+  border: 1px solid #232F3E;
 }
 .tablaRegistro label{
   margin-right: 15px;
 }
 input:focus {
-  background-color: #45688b;
+  background-color: #232F3E;
   color: white;
 }
 .botonesFormulario button{
@@ -240,3 +368,22 @@ textarea{
   resize: vertical;
 }
 /* FIN Tabla Formulario Registro */
+
+/* COMIENZO Footer */
+footer {
+  font-family: Verdana, Geneva, sans-serif;
+  border-style: double; border-width: 4px;
+  border-radius: 40px 40px 0 0;
+  background-color: #232F3E;
+  clear: both;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 12px;
+  height: 70px;
+}
+footer p {
+  margin: 5px;
+  padding: 5px;
+}
+/* FIN Footer */

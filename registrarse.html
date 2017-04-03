@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/styles2.css" rel="stylesheet">
-    <title>Loekemeyer - Registrarse en nuestra pagina web</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Loekemeyer - Utensilios para la cocina del hogar y profesional</title>
   </head>
   <body>
       <div class="containerGeneral"> <!-- Abre Container General-->
@@ -16,18 +16,23 @@
           </div>
 
           <div class="buscador">
-            <img src="images/buscador.png" alt="Buscador">
+            <!--<img src="images/buscador.png" alt="Buscador">-->
+            <form action="/action_page.php" class="formLogin">
+                  <input type="text" name="buscador" id="buscador" size="60" maxlength="59">
+                  <button type="button" name="buscador">Buscar</button>
+            </form>
           </div>
 
           <div class="main-login">  <!-- Abre Menu Registro/Login Principal-->
               <ul>
-                <li><a href="#" onclick="window.open('registrarse.html','ventanaRegistro','width=1100px,height=800px,top=50px,left=150px');return false">Registrarse</a></li>
-                <li><form action="/action_page.php" class="formLogin">
+                <li><a href="registrarse.html">Registrarse</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!--<li><form action="/action_page.php" class="formLogin">
                       <label for="usuario">Usuario:</label><input type="text" name="usuario" id="usuario">
                       <label for="password">Password:</label><input type="text" name="password" id="password">
                       <input type="submit" value="Login">
                     </form>
-                </li>
+                </li>-->
 
                   <!--<a href="login.html">Login</a></li>-->
               </ul>
@@ -67,13 +72,17 @@
 
           <div class="main-language">  <!-- Abre Menu Lenguajes-->
               <ul>
-                  <li><a href="#"><img src="images/banderaArgentina.png" width="40px" height="40px" alt="Idioma Español">Español</a></li>
-                  <li><a href="#"><img src="images/banderaEstadosUnidos.png" width="40px" height="40px" alt="Idioma Ingles">Ingles</a></li>
-                  <li><a href="#" alt="Carrito de Compras"><img src="images/carritoDeCompras.png" alt="Carrito de Compras" class="carritoDeCompras"></a></li>
+                  <li><a href="#"><img src="images/banderaArgentina.png" width="20px" height="20px" alt="Idioma Español">Español</a></li>
+                  <li><a href="#"><img src="images/banderaEstadosUnidos.png" width="20px" height="20px" alt="Idioma Ingles">Ingles</a></li>
               </ul>
           </div>  <!-- Cierra Menu Lenguajes-->
 
+          <div class="carritoDeCompras">
+              <a href="#" alt="Carrito de Compras"><img src="images/carritoDeCompras.png" alt="Carrito de Compras"></a>
+          </div>
+
         </header> <!-- Cierra header Principal-->
+
 
         <div class="containerPrincipal">  <!-- Abre Container Principal-->
 
@@ -101,7 +110,7 @@
                   <td class="botonesFormulario"><button type="submit" name="botonEnviar"><img src="images/botonEnviar.png" width="200px" height="50px" alt="Enviar">
                   </button><button type="reset" name="botonreset"><img src="images/botonReset.png" width="200px" height="50px" alt="Borrar"></button>
                   </td>
-                  <td>Todos los campos con * son obligatorios</td>
+                  <td><input type="checkbox" name="terminosCondiciones" value="terminosCondiciones" required>He leido y acepto los terminos y condiciones de uso<p>Todos los campos con * son obligatorios</td>
                 </tr>
               </form>
           </table>
