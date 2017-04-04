@@ -66,9 +66,10 @@ header {
   font-weight: 100;
   position: absolute;
   top: 10px;
-  right: 200px;
-  width: 21%;
+  right: 230px;
+  width: 20%;
   display: block;
+  
 }
 
 .main-login ul {
@@ -76,7 +77,7 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .main-login li a {
@@ -168,18 +169,19 @@ padding:0;
 
 .mainNavVertical ul li a:hover, .mainNavVertical ul li a.selected{
 color: orange;
-
+visibility: visible;
 }
 
 .mainNavVerticalCompleto {
-  width: 15.10%;
+  width: 30%;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 12px;
   background-color: #FFFFFF;
   top: 70px;
   left: 20px;
-  display: none;    /* Sacar esto para ver el menu completo */
+  display: none;   /* Sacar esto para ver el menu completo */
 }
+
 .mainNavVerticalCompleto li a{
   display:block;
   color: #494949;
@@ -337,6 +339,10 @@ h1 {
   font-weight: 900;
   font-family: Verdana, Geneva, sans-serif;
   color: #232F3E;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
+
 }
 
 h2 {
