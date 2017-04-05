@@ -69,7 +69,7 @@ header {
   right: 230px;
   width: 20%;
   display: block;
-  
+
 }
 
 .main-login ul {
@@ -104,104 +104,85 @@ header {
 
 /* FIN Menu Login */
 
-
-/* COMIENZO Menu Productos */
-.navProductos {
-  background-color: green;
+/* COMIENZO MENU VERTICAL */
+.navVertical {
+  display:block;
+  width: 24%;
   position: absolute;
-  width: 11%;
-  bottom: 1px;
-  left: 20px;
-  font-style: Verdana,italic, sans-serif;
-  font-size: 20px;
-  display: block;
+  top: 60px;
 }
-.navProductos a {
-  color: #FFFFFF;
+.nav li a {
   text-decoration: none;
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  width: 100%;
 }
-.navProductos ul {
-  background-color: white;
-  position: relative;
-  top: 100px;
-}
-
-.nuestrosProductos {
-  background-color: #232F3E;
-  height: 30px;
+.nav {
   margin: 0;
   padding: 0;
 }
-.nuestrosProductos a{
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #FFFFFF;
-  text-decoration: none;
+.nav > li {
+  display: inline-block;
+  padding: 12px;
+  position: relative;
+  width: 100%;
 }
 
-.nuestrosProductos li a:hover {
-  color: 	#A9A9A9;
-  text-decoration: underline;
+.nav li > ul {
+  list-style-type: none;
+  display: none;
+  position: relative;
 }
-
-.mainNavVertical{
-font-family: Verdana, Geneva, sans-serif;
-font-size: 12px;
-position: absolute;
-overflow: hidden;
-background-color: #FFFFFF;
-top: 70px;
-left: 20px;
-display: block;
-}
-
-.mainNavVertical ul{
-padding: 0;
-margin: 0;
-list-style: none;
-}
-
-.mainNavVertical ul li{
-margin:0;
-padding:0;
-}
-
-.mainNavVertical ul li a:hover, .mainNavVertical ul li a.selected{
-color: orange;
-visibility: visible;
-}
-
-.mainNavVerticalCompleto {
-  width: 30%;
-  font-family: Verdana, Geneva, sans-serif;
+.nav li ul a{
   font-size: 12px;
-  background-color: #FFFFFF;
-  top: 70px;
-  left: 20px;
-  display: none;   /* Sacar esto para ver el menu completo */
+}
+.nav li:hover {
+  background-color: #fff;
+  color: #000;
+
+  border: 2px solid #293B71;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+}
+.nav li:hover a {
+  color: #000;
+}
+.nav li:hover > ul {
+  display: block;
+  top: 100%;
+  left: -5%;
+  width: 100%;
 }
 
-.mainNavVerticalCompleto li a{
-  display:block;
-  color: #494949;
-  padding: 10px 0 10px 0;
-  text-decoration: none;
-  border: 1px solid #cacaca;
-  text-shadow: 0 -1px 1px #cfcfcf; /* CSS text shadow to give text some depth */
-  -moz-transition: all 0.2s ease-in-out; /* Enable CSS transition between property changes */
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.nav li:hover > ul li {
+   padding: 10px;
+   background-color: #2c4c71;
+   width: 400px;
+   -moz-box-shadow: 7px 7px 7px #777777;
+   -webkit-box-shadow: 7px 7px 7px #777777;
+   box-shadow: 7px 7px 7px #777777;
+
+
+   border: 1px solid #a7b9ee;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+
+
 }
-
-.imagenFlecha {
-  width: 30px;
+.nav li:hover > ul li a{
+  color: #FFFFFF;
 }
-/* FIN Menu Productos */
-
-
+.nav li:hover > ul li:hover {
+   text-decoration: underline;
+   color: #FFFFFF;
+   background-color: #294769;
+}
+/* FIN MENU VERTICAL */
 
 /* COMIENZO Menu Principal */
 .main-nav {
@@ -416,21 +397,12 @@ footer p {
   .buscador input {
     width: 30%;
   }
-  /* COMIENZO Menu Productos */
-  .navProductos {
-    font-size: 14px;
-  }
   /* COMIENZO Menu Login */
   .main-login {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 12px;
   }
 
-
-  .nuestrosProductos a{
-    font-size: 12px;
-
-  }
   /* COMIENZO Menu Principal */
   .main-nav {
     font-size: 12px;
@@ -519,7 +491,7 @@ footer p {
     top: 5px;
     width: 10%;
   }
-  .mainNavVertical {
+  .navVertical {
     display: none;
   }
   /* COMIENZO Menu Principal */
@@ -571,30 +543,6 @@ footer p {
   .mainNavVertical li{
     width: 100%
 
-  }
-  .nuestrosProductos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .mainNavVertical li a {
-    color: #FFFFFF;
-    display: block;
-    text-decoration: none;
-    padding: 0.5em;
-    flex-grow: 1;
-    text-align: center;
-    border: 1px solid white;
-  }
-  .mainNavVertical li a:hover {
-    color: 	#A9A9A9;
-    text-decoration: underline;
-  }
-  .mainNavVertical img {
-    display: none;
   }
 }
 
