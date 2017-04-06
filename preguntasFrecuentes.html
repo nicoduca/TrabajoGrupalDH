@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <title>Loekemeyer - Utensilios para la cocina del hogar y profesional</title>
   </head>
   <body>
@@ -16,7 +17,6 @@
           </div>
 
           <div class="buscador">
-            <!--<img src="images/buscador.png" alt="Buscador">-->
             <form action="/action_page.php" class="formLogin">
                   <input type="text" name="buscador" id="buscador" size="60" maxlength="59">
                   <button type="button" name="buscador">Buscar</button>
@@ -38,10 +38,10 @@
               </ul>
           </div>  <!-- Cierra Menu Registro/Login Principal-->
 
-          <div class="mainNavVertical">
-            <ul>
-              <li class="nuestrosProductos"><a href="#">Nuestros Productos</a></li>
-                <ul class="mainNavVerticalCompleto">
+          <div class="navVertical"> <!-- Abre Menu Vertical Productos -->
+            <ul class="nav">
+              <li><a href="nuestrosProductos.html">Nuestros Productos</a>
+                <ul>
                   <li><a href="#">Línea Abrelatas y Sacacorchos</a></li>
                   <li><a href="#">Línea peladores, moldeadores y cortadores</a></li>
                   <li><a href="#">Línea Accesorios</a></li>
@@ -55,9 +55,9 @@
                   <li><a href="#">Línea mates, bombillas, posapavas</a></li>
                   <li><a href="#">Línea Utensilios para Repostería</a></li>
                 </ul>
+              </li>
             </ul>
-          </div>
-
+          </div> <!-- Cierra Menu Vertical Productos -->
 
           <nav class="main-nav"> <!-- Abre Menu Principal-->
             <ul>
@@ -87,6 +87,34 @@
         <div class="containerPrincipal">  <!-- Abre Container Principal-->
 
             <h1>Preguntas Frecuentes</h1>
+            <div class="preguntasFrecuentes">
+              <table>
+                <ol>
+                    <li><p class="pregunta">Es obligatorio estar registrado en la pagina?</p>
+                    <p class="respuesta">Es obligatorio estar registrado en la pagina web para poder compar o hacer comentarios en nuestros articulos</p></li>
+                    <li><p class="pregunta">Privacidad de la Información?</p>
+                    <p class="respuesta">Los Usuarios deberán facilitar determinados datos de carácter personal. Su información personal se procesa
+                    y almacena en servidores o medios magnéticos que mantienen altos estándares de seguridad y protección tanto física como tecnológica.</p></li>
+                    <li><p class="pregunta">La aceptación por parte de los Usuarios?</p>
+                    <p class="respuesta">Nos reservamos el derecho a exigir que cada usuario, acepte y cumpla los términos aquí expresados como
+                    condición previa y necesaria para el acceso, y utilización de los servicios y/o contenidos brindados por el Sitio.<br>
+                    Cuando un usuario accediere al Sitio y utilizare cualquiera de los servicios y/o contenidos existentes,
+                    hará presumir el conocimiento del presente texto y que ha manifestado su plena aceptación con respecto a todas
+                    y cada una de las disposiciones que lo integran.<br>
+                    El usuario que no acepte, se halle en desacuerdo, o incurriere en incumplimiento de las disposiciones fijadas
+                    en estas Condiciones Generales, no contará con autorización para el uso de los servicios y contenidos que existen
+                    o puedan existir en el Sitio, debiendo retirarse del Sitio en forma inmediata, y
+                    abstenerse de ingresar nuevamente al mismo.</p></li>
+                    <li><p class="pregunta">Comentarios en los productos?</p>
+                    <p class="respuesta">Otro de los servicios brindados, reservado sólo a usuarios registrados, es la posibilidad de incorporar comentarios
+                    en forma de mensajes sobre un post.</p></li>
+                    <li><p class="pregunta">Finalización del Servicio</p>
+                    <p class="respuesta">Podremos a nuestra sola discreción suspender temporalmente o desactivar definitivamente la cuenta de un usuario,
+                    sin que medie previa notificación al mismo, y sin que sea necesaria la invocación de causa alguna, procediéndose en tal caso a la
+                    eliminación de toda la información relacionada con la cuenta. </p></li>
+                </ol>
+              </table>
+            </div>
 
         </div>  <!-- Cierra Container Principal-->
 

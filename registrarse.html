@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <title>Loekemeyer - Utensilios para la cocina del hogar y profesional</title>
   </head>
   <body>
@@ -16,7 +17,6 @@
           </div>
 
           <div class="buscador">
-            <!--<img src="images/buscador.png" alt="Buscador">-->
             <form action="/action_page.php" class="formLogin">
                   <input type="text" name="buscador" id="buscador" size="60" maxlength="59">
                   <button type="button" name="buscador">Buscar</button>
@@ -38,10 +38,10 @@
               </ul>
           </div>  <!-- Cierra Menu Registro/Login Principal-->
 
-          <div class="mainNavVertical">
-            <ul>
-              <li class="nuestrosProductos"><a href="#">Nuestros Productos</a></li>
-                <ul class="mainNavVerticalCompleto">
+          <div class="navVertical"> <!-- Abre Menu Vertical Productos -->
+            <ul class="nav">
+              <li><a href="nuestrosProductos.html">Nuestros Productos</a>
+                <ul>
                   <li><a href="#">Línea Abrelatas y Sacacorchos</a></li>
                   <li><a href="#">Línea peladores, moldeadores y cortadores</a></li>
                   <li><a href="#">Línea Accesorios</a></li>
@@ -55,9 +55,9 @@
                   <li><a href="#">Línea mates, bombillas, posapavas</a></li>
                   <li><a href="#">Línea Utensilios para Repostería</a></li>
                 </ul>
+              </li>
             </ul>
-          </div>
-
+          </div> <!-- Cierra Menu Vertical Productos -->
 
           <nav class="main-nav"> <!-- Abre Menu Principal-->
             <ul>
@@ -86,34 +86,41 @@
 
         <div class="containerPrincipal">  <!-- Abre Container Principal-->
 
-            <h1>Registrarse en nuestra Pagina</h1>
+          <h1>Registrarse en nuestra Pagina</h1>
 
-            <table cellpadding="0" cellspacing="0" class="tablaRegistro">
-              <form class="formularioRegistro" action="form.php" method="post">
-                <tr>
-                  <td><label for="nombreApellido">* Nombre y Apellido</label><input type="text" name="nombreApellido" id="nombreApellido" size="30" maxlength="25" value="" placeholder="Ingrese su nombre y apellido" required></td>
-                  <td><label for="username">* Username</label><input type="text" name="username" value="" id="username" size="30" maxlength="15" placeholder="Ingrese su Username" required></td>
-                </tr>
-                <tr>
-                  <td><label for="email">* Email</label><input type="email" name="email" id="email" size="30" maxlength="25" value="" placeholder="Ingrese su email" required></td>
-                  <td><label for="sexo">* Sexo</label><input type="radio" name="sexo" id="sexo" value="masculino" required>Masculino<input type="radio" name="sexo" value="femenino" required>Femenino</td>
-                </tr>
-                <tr>
-                  <td><label for="password">* Password</label><input type="password" name="password" id="password" size="30" maxlength="15" value="" placeholder="Ingrese su password" required></td>
-                  <td><label for="confirmacionPassword">* Confirmar Password</label><input type="password" name="confirmacionPassword" id="confirmacionPassword" size="30" maxlength="15" value="" placeholder="Confirme su password" required></td>
-                </tr>
-                <tr>
-                  <td><label for="fechaNacimiento">* Fecha de Nacimiento</label><input type="date" name="fechaNacimiento" id="fechaNacimineto" size="30" maxlength="8" placeholder="dd/mm/aa"></td>
-                  <td><textarea name="comentariosAdicionales" rows="8" cols="40" placeholder="Comentarios Adicionales"></textarea></td>
-                </tr>
-                <tr>
-                  <td class="botonesFormulario"><button type="submit" name="botonEnviar"><img src="images/botonEnviar.png" width="200px" height="50px" alt="Enviar">
-                  </button><button type="reset" name="botonreset"><img src="images/botonReset.png" width="200px" height="50px" alt="Borrar"></button>
-                  </td>
-                  <td><input type="checkbox" name="terminosCondiciones" value="terminosCondiciones" required>He leido y acepto los terminos y condiciones de uso<p>Todos los campos con * son obligatorios</td>
-                </tr>
-              </form>
-          </table>
+          <form class="formularioRegistro" action="form.php" method="post">
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <p><label for="nombreApellido">* Nombre y Apellido: <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Ingrese su nombre y apellido" size="30" maxlength="29" required></label></p>
+              <p><label for="username">* Username: <input type="text" name="username" id="username" size="20" maxlength="19" placeholder="Ingrese su Username" required></label></p>
+              <p><label for="email">* Email: <input type="email" name="email" id="email" size="30" maxlength="29" placeholder="Ingrese su email" required></label></p>
+              <p><label for="password">* Password: <input type="password" name="password" id="password" size="30" maxlength="29" placeholder="Ingrese su password" required></label></p>
+              <p><label for="confirmacionPassword">* Confirmar Password: <input type="password" name="confirmacionPassword" id="confirmacionPassword" size="30" maxlength="15" placeholder="Confirme su password" required></label></p>
+              <p> <label for="fechaNacimiento">* Fecha de Nacimiento: <input type="date" name="fechaNacimiento" id="fechaNacimineto" size="11" maxlength="8" placeholder="dd/mm/aa" required></label></p>
+              <p><label for="sexo">* Sexo: <input type="radio" name="sexo" id="masculino" required>Masculino<input type="radio" name="sexo" id="femenino" required>Femenino</label></p>
+            </fieldset><br>
+
+            <fieldset>
+              <legend>Consultas Generales</legend>
+              <p><label for="dondeEscuchaste">Donde nos conociste?</label>
+                <select name="referrer" id="dondeEscuchaste">
+                    <option value="internet">Internet</option>
+                    <option value="amigo">Amigo</option>
+                    <option value="diario">Diario</option>
+                    <option value="otro">Otro</option>
+               </select>
+              </p>
+              <p>Sos Particular o Empresa?
+                <label><input type="radio" name="particularEmpresa" value="particular">Particular</label>
+                <label><input type="radio" name="particularEmpresa" value="empresa">Empresa</label>
+              </p>
+              <p><textarea name="comentariosAdicionales" rows="8" cols="40" placeholder="Comentarios Adicionales"></textarea><br>
+              </p>
+              <p>Todos los campos con * son obligatorios</p>
+              <label><input type="checkbox" name="terminosCondiciones" value="terminosCondiciones" required>He leido y acepto los terminos y condiciones de uso</label>
+              <p class="botones"><input type="submit" value="Enviar"><input type="reset" value="Borrar"></p>
+            </fieldset>
+          </form>
 
         </div>  <!-- Cierra Container Principal-->
 
