@@ -56,6 +56,12 @@ header {
 .buscador input {
   border-radius: 50px;
 }
+.buscador button {
+  border-radius: 50px;
+  position: absolute;
+  top: -1px;
+  left: 390px;
+}
 /* FIN Buscador */
 
 /* COMIENZO Menu Login */
@@ -65,7 +71,7 @@ header {
   font-weight: 100;
   position: absolute;
   top: 10px;
-  right: 230px;
+  right: 0;
   width: 20%;
   display: block;
 
@@ -86,7 +92,6 @@ header {
   padding-right: 3em;
   padding-top: 0.2em;
   flex-grow: 1;
-  text-align: center;
 }
 .main-login li a:hover {
   color: grey;
@@ -223,6 +228,7 @@ header {
 
 
 /* COMIENZO Menu Idiomas */
+/*
 .main-language {
   font-family: Verdana, Geneva, sans-serif;
   font-weight: 200;
@@ -256,6 +262,7 @@ header {
   text-decoration: underline;
   color: 	#A9A9A9;
 }
+*/
 /* FIN Menu Idiomas */
 
 /* COMIENZO Carrito de compras */
@@ -263,7 +270,7 @@ header {
   float: right;
   width: 3%;
   height: 50px;
-  right: 10px;
+  right: 50px;
   top: 50px;
   position: absolute;
   display: block;
@@ -273,7 +280,13 @@ header {
   height: 50px;
 
 }
+
 /* FIN Carrito de compras */
+
+.main-nav .mainNavNuestrosProductos {
+display: none;
+}
+
 
 /* COMIENZO imagenPrincipal */
 .imagenPrincipal {
@@ -389,7 +402,11 @@ footer p {
 
 @media only screen and (max-width : 1200px) {
   .buscador input {
-    width: 30%;
+    width: 170px;
+    display: block;
+  }
+  .buscador button {
+    left: 175px;
   }
   /* COMIENZO Menu Login */
   .main-login {
@@ -402,15 +419,15 @@ footer p {
     font-size: 12px;
 
   }
+
+
   /* COMIENZO Menu Idiomas */
+  /*
   .main-language {
     font-size: 10px;
     right: 0;
   }
-  /* COMIENZO Carrito de compras */
-  .carritoDeCompras {
-    right: 20px;
-  }
+  */
 }
 
 
@@ -430,21 +447,18 @@ footer p {
   /* FIN Menu Principal */
 
   /* COMIENZO Menu Idiomas */
+  /*
   .main-language {
     font-size: 9px;
     right: 0;
   }
-
-  /* COMIENZO Carrito de compras */
-  .carritoDeCompras {
-    right: 40px;
-  }
+  */
 
   /* COMIENZO Menu Login */
   .main-login {
     font-family: Verdana, Geneva, sans-serif;
     font-size: 10px;
-    right: 150px;
+
   }
 }
 
@@ -457,9 +471,14 @@ footer p {
   .logoPrincipal {
     width: 20%;
   }
+
+  /*
   .main-language img {
     display: none;
   }
+  */
+
+
   .logoPrincipal img {
     width: 100px;
     height: 30px;
@@ -467,26 +486,36 @@ footer p {
   }
   /* COMIENZO Buscador */
   .buscador {
-    display: none;
+  width: 220px;
+  left: 130px;
+  display: none;
   }
+
   .main-login {
     left: 150px;
-    top: 5px;
-    width: 20%;
   }
+
+  /*
   .main-language {
     left: 270px;
     width: 15%;
     top: 5px;
   }
+*/
+
   /* COMIENZO Carrito de compras */
   .carritoDeCompras {
-    right: 5px;
+    right: 20px;
     top: 5px;
     width: 10%;
   }
+
   .navVertical {
     display: none;
+  }
+  .main-nav .mainNavNuestrosProductos {
+  display: block;
+  width: 200%;
   }
   /* COMIENZO Menu Principal */
   .main-nav {
@@ -536,7 +565,6 @@ footer p {
   }
   .mainNavVertical li{
     width: 100%
-
   }
 }
 
@@ -544,16 +572,23 @@ footer p {
    header {
     height: 285px;
   }
+
+/*
   .main-language {
     display: none;
   }
+
+  */
   .main-login {
-    left: 180px;
+
   }
   .carritoDeCompras {
     right: 40px;
   }
   .main-nav li{
     width: 100%;
+  }
+  .main-nav .mainNavNuestrosProductos {
+  width: 100%;
   }
 }
