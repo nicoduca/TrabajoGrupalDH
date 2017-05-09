@@ -1,0 +1,816 @@
+* {
+  box-sizing: border-box;
+}
+
+/* COMIENZO Contenedor General */
+.containerGeneral {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+/* FIN Contenedor General */
+
+.containerPrincipal {
+
+}
+
+/* COMIENZO Body */
+body {
+
+}
+/* FIN Body */
+
+
+/* COMIENZO Header */
+header {
+  background-color: #232F3E;
+  width: 100%;
+  height: 100px;
+  position: relative;
+
+}
+/* FIN Header */
+
+
+/* COMIENZO Logo */
+.logoPrincipal {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 11%;
+  display: block;
+}
+
+.logoPrincipal img {
+  width: 200px;
+  height: 50px;
+  margin: 0;
+}
+/* FIN Logo */
+
+
+/* COMIENZO Buscador */
+.buscador {
+  position: absolute;
+  top: 10px;
+  left: 260px;
+  width: 48%; /* 30 56*/
+
+}
+.buscador input {
+  border-radius: 50px;
+}
+.buscador button {
+  border-radius: 50px;
+  position: absolute;
+  top: -1px;
+  left: 460px;
+}
+.buscador img {
+
+}
+/* FIN Buscador */
+
+
+/* COMIENZO Menu Login */
+.main-login {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 20%;
+  display: block;
+}
+.main-login ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.main-login li a {
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  padding-right: 3em;
+  padding-top: 0.2em;
+  flex-grow: 1;
+}
+.main-login li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+.formLogin {
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 10px;
+}
+.formLogin input{
+  margin-right: 20px;
+}
+/* FIN Menu Login */
+
+
+/* COMIENZO MENU VERTICAL */
+.navVertical {
+  /*display:block;*/
+  width: 250px;
+  position: absolute;
+  top: 60px;
+  z-index: 10;
+}
+.nav li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  width: 100%;
+}
+.nav {
+  margin: 0 0 0 1px;
+  padding: 0;
+  width: 100%;
+}
+.nav > li {
+  display: inline-block;
+  padding: 12px;
+  position: relative;
+  width: 100%;
+}
+.nav li > ul {
+  list-style-type: none;
+  display: none;
+  position: relative;
+}
+.nav li ul a{
+  font-size: 11px;
+}
+.nav li:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #293B71;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.nav li:hover a {
+  color: #000;
+}
+.nav li:hover > ul {
+  display: block;
+  top: 100%;
+  left: -5%;
+  width: 100%;
+}
+.nav li:hover > ul li {
+   padding: 10px;
+   margin-left: -30px;
+   background-color: #2c4c71;
+   /*width: 400px; Aca es para que el menu azul de adentro se agrande */
+   -moz-box-shadow: 7px 7px 7px #777777;
+   -webkit-box-shadow: 7px 7px 7px #777777;
+   box-shadow: 7px 7px 7px #777777;
+   border: 1px solid #a7b9ee;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+}
+.nav li:hover > ul li a{
+  color: #FFFFFF;
+}
+.nav li:hover > ul li:hover {
+   text-decoration: underline;
+   color: #FFFFFF;
+   background-color: #294769;
+}
+/* FIN MENU VERTICAL */
+
+
+/* COMIENZO Menu Principal */
+.main-nav {
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  display: block;
+}
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.main-nav li a {
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+  flex-grow: 1;
+  text-align: center;
+}
+.main-nav li a:hover {
+  color: 	#A9A9A9;
+  text-decoration: underline;
+}
+/* FIN Menu Principal */
+
+
+/* COMIENZO Carrito de compras */
+.carritoDeCompras {
+  float: right;
+  width: 3%;
+  height: 50px;
+  right: 50px;
+  top: 50px;
+  position: absolute;
+  display: block;
+}
+.carritoDeCompras img{
+  width: 50px;
+  height: 50px;
+}
+/* FIN Carrito de compras */
+
+/* COMIENZO Link Nuestros Productos para modo Celular */
+.main-nav .mainNavNuestrosProductos {
+display: none;
+}
+/* FIN Link Nuestros Productos para modo Celular */
+
+
+/* COMIENZO imagenPrincipal */
+.imagenPrincipal {
+  width: 100%;
+}
+/* FIN imagenPrincipal */
+
+
+/* COMIENZO H1, H2 , H3 ..... */
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  color: #232F3E;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+  font-family: Tahoma, sans-serif;
+  color: #3a5e8f;
+  background-color: rgba(226, 217, 217, 0.69);
+}
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* FIN H1, H2 , H3 ..... */
+
+/* COMIENZO Divs Individuales Productos Home */
+.productosInicioUno{
+  border: 2px solid white;
+  float: left;
+  width: 24%;
+  margin: 0.5% 0.5% 3.5% 0.5%;
+  border: 3px ridge #232F3E;
+  position: relative;
+}
+.productosInicioUno img {
+  width: 100%;
+}
+.tituloProductosInicio {
+  text-align: center;
+  width: 100%;
+}
+.tituloProductosInicio a{
+  text-decoration: none;
+}
+.tituloProductosInicio a:hover{
+  text-decoration: underline;
+  color: grey;
+}
+.descripcionProductosInicio p{
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+}
+.precioProductosInicio {
+  width: 100%;
+}
+.precioProductosInicio p{
+  text-align: right;
+  font-weight: 900;
+  font-size: 24px;
+  color: red;
+  margin: 0;
+}
+.productosInicioDos{
+  border: 2px solid white;
+  float: left;
+  width: 24%;
+  margin: 0.5%;
+  border: 3px ridge #232F3E;
+}
+.productosInicioDos img {
+  width: 100%;
+}
+.productosInicioTres{
+  border: 2px solid white;
+  float: left;
+  width: 24%;
+  margin: 0.5%;
+  border: 3px ridge #232F3E;
+}
+.productosInicioTres img {
+  width: 100%;
+}
+.productosInicioCuatro{
+  border: 2px solid white;
+  float: left;
+  width: 24%;
+  margin: 0.5%;
+  border: 3px ridge #232F3E;
+}
+.productosInicioCuatro img {
+  width: 100%;
+}
+/* FIN Divs Individuales Productos Home */
+
+/* COMIENZO Titulo entre Divs Home - Mas Vendidos*/
+.masVendidos{
+  clear: both;
+}
+.masVendidos h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  color: #232F3E;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
+  margin: 0;
+  padding: 0;
+}
+/* FIN Titulo entre Divs Home - Mas Vendidos*/
+
+/* COMIENZO Divs Home de Mas Vendidos */
+.productosMasVendidosUno{
+  border: 2px solid white;
+  float: left;
+  width: 32%;
+  margin: 2.5% 0 3.5% 0.5%;
+  border: 4px ridge #232F3E;
+  border-radius: 20px;
+}
+.productosMasVendidosUno img {
+  width: 100%;
+  border-radius: 15px;
+
+}
+.productosMasVendidosDos{
+  border: 2px solid white;
+  float: left;
+  width: 32%;
+  margin: 2.5% 0.5% 3.5% 0.5%;
+  border: 4px ridge #232F3E;
+  border-radius: 20px;
+}
+.productosMasVendidosDos img {
+  width: 100%;
+  border-radius: 15px;
+}
+.productosMasVendidosTres{
+  border: 2px solid white;
+  float: left;
+  width: 32%;
+  margin: 2.5% 0.5% 3.5% 0.5%;
+  border: 4px ridge #232F3E;
+  border-radius: 20px;
+}
+.productosMasVendidosTres img {
+  width: 100%;
+  border-radius: 15px;
+}
+/* FIN Divs Home de Mas Vendidos */
+
+/* COMIENZO Titulo entre Divs Home - Mas Vistos*/
+.masVistos{
+  clear: both;
+}
+.masVistos h2{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  color: #232F3E;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
+  margin: 0;
+  padding: 0;
+}
+/* FIN Titulo entre Divs Home - Mas Vistos*/
+
+
+/* COMIENZO Divs Home de Mas Vistos */
+.productosMasVistosUno {
+  border: 2px solid white;
+  float: left;
+  width: 49%;
+  margin: 2.5% 0.5% 3.5% 0.5%;
+  border: 5px ridge #232F3E;
+}
+.productosMasVistosUno img {
+  width: 100%;
+}
+.productosMasVistosDos {
+  border: 2px solid white;
+  float: left;
+  width: 49%;
+  margin: 2.5% 0.5% 3.5% 0.5%;
+  border: 5px ridge #232F3E;
+}
+.productosMasVistosDos img {
+  width: 100%;
+}
+/* FIN Divs Home de Mas Vistos */
+
+
+/* COMIENZO Div Preguntas Frecuentes */
+.preguntasFrecuentes {
+  width: 70%;
+  border: 2px solid #293B71;
+  border-radius: 30px;
+  margin: auto;
+}
+.pregunta {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: #0a0e38;
+}
+.respuesta{
+  font-style: italic;
+  font-weight: 200;
+  font-family: monospace;
+  font-size: 18px;
+  color: #633f0f;
+}
+
+/* FIN Div Preguntas Frecuentes */
+
+
+/* COMIENZO Tabla Formulario Registro */
+fieldset {
+ width: 55%;
+ border: 1px solid #dcdcdc;
+ border-radius: 10px;
+ padding: 20px;
+ margin: auto;
+}
+legend {
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.botones input {
+  color: #444444;
+  text-shadow: 0 1px 1px #ffffff;
+  border-bottom: 2px solid #b2b2b2;
+  background-color: #b9e4e3;
+  background: -webkit-gradient(linear, left top,   left bottom, from(#beeae9), to(#a8cfce));
+  background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+  background: -o-linear-gradient(top, #beeae9, #a8cfce);
+  background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+}
+.botones input:hover {
+  color: #333333;
+  border: 1px solid #a4a4a4;
+  border-top: 2px solid #b2b2b2;
+  background-color: #a0dbc4;
+  background: -webkit-gradient(linear, left top,   left bottom, from(#a8cfce), to(#beeae9));
+  background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+  background: -o-linear-gradient(top, #a8cfce, #beeae9);
+  background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+}
+/* FIN Tabla Formulario Registro */
+
+
+/* COMIENZO Footer */
+footer {
+  font-family: Verdana, Geneva, sans-serif;
+  border-style: double; border-width: 4px;
+  border-radius: 40px 40px 0 0;
+  background-color: #232F3E;
+  clear: both;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 12px;
+  height: 70px;
+}
+footer p {
+  padding: 5px;
+}
+/* FIN Footer */
+
+
+
+/* COMIENZO @media 1200px */
+@media only screen and (max-width : 1200px) {
+  /* COMIENZO buscador */
+  .buscador input {
+    width: 170px;
+    display: block;
+  }
+  .buscador button {
+    left: 175px;
+  }
+  /* FIN buscador */
+
+  /* COMIENZO Menu Login */
+  .main-login {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 25%;
+  }
+  /* FIN Menu Login */
+
+  /* COMIENZO Menu Vertical */
+  .navVertical {
+    width: 250px;
+  }
+  .nav li a {
+    font-size: 12px;
+  }
+  /* FIN Menu Vertical */
+
+  /* COMIENZO Menu Principal */
+  .main-nav {
+    font-size: 12px;
+  }
+  /* FIN Menu Principal */
+
+  /* COMIENZO Descripcion y Titulo Divs Home */
+  .tituloProductosInicio a{
+    font-size: 24px;
+  }
+  .precioProductosInicio p{
+    font-size: 20px;
+  }
+  /* FIN Descripcion y Titulo Divs Home */
+}
+/* FIN @media 1200px */
+
+
+
+/* COMIENZO @media 992px */
+@media only screen and (max-width : 992px) {
+  /* COMIENZO Menu Principal */
+  .main-nav {
+    left: 250px;
+    width: 50%;
+  }
+  .main-nav li a{
+    border-right: 1px solid grey;
+    padding: 5px 20px 5px 20px;
+    margin: 0;
+  }
+  .main-nav li a:hover {
+    color: 	#A9A9A9;
+    text-decoration: underline;
+  }
+  /* FIN Menu Principal */
+
+  /* COMIENZO Menu Login */
+  .main-login {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+  }
+}
+/* FIN @media 992px */
+
+
+/* COMIENZO @media 768px */
+@media only screen and (max-width : 768px) {
+  /* COMIENZO header */
+  header {
+    height: 200px;
+  }
+  /* FIN header */
+
+  /* COMIENZO Logo */
+  .logoPrincipal {
+    width: 20%;
+  }
+  .logoPrincipal img {
+    width: 100px;
+    height: 30px;
+    margin: 0;
+  }
+  /* FIN Logo */
+
+  /* COMIENZO Buscador */
+  .buscador {
+  width: 220px;
+  left: 130px;
+  display: none;
+  }
+  /* FIN Buscador */
+
+  /* COMIENZO Menu Login */
+  .main-login {
+    left: 150px;
+    width: 45%;
+  }
+
+  /* FIN` Menu Login */
+
+  /* COMIENZO Carrito de compras */
+  .carritoDeCompras {
+    right: 20px;
+    top: 5px;
+    width: 10%;
+  }
+  /* FIN Carrito de compras */
+
+  /* COMIENZO Menu Vertical */
+  .navVertical {
+    display: none;
+  }
+  .main-nav .mainNavNuestrosProductos {
+  display: block;
+  width: 200%;
+  }
+  .mainNavVertical {
+    display: block;
+    left: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 96px;
+  }
+  .mainNavVertical li{
+    width: 100%
+  }
+  /* FIN Menu Vertical */
+
+  /* COMIENZO Menu Principal */
+  .main-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  .main-nav li{
+    width: 50%;
+  }
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-nav li a {
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid white;
+  }
+  .main-nav li a:hover {
+    color: 	#A9A9A9;
+    text-decoration: underline;
+  }
+  /* FIN Menu Principal */
+
+  /* COMIENZO Productos Divs Home */
+  .productosInicioUno{
+    width: 48%;
+    margin: 0.5%;
+  }
+  .productosInicioDos{
+    width: 48%;
+    margin: 0.5%;
+  }
+  .productosInicioTres{
+    width: 48%;
+    margin: 0.5%;
+  }
+  .productosInicioCuatro{
+    width: 48%;
+    margin: 0.5%;
+  }
+  /* FIN Productos Divs Home */
+
+}
+/* FIN @media 768px */
+
+
+
+/* COMIENZO @media 368px */
+@media only screen and (max-width : 368px) {
+  /* COMIENZO header */
+   header {
+    height: 285px;
+  }
+  /* FIN header */
+
+  /* COMIENZO Main Login */
+   .main-login {
+    left: 130px;
+    width: 20%;
+  }
+  /* FIN Main Login */
+
+  /* COMIENZO carritoDeCompras */
+  .carritoDeCompras {
+    right: 40px;
+  }
+  /* FIN carritoDeCompras */
+
+  /* COMIENZO Menu Principal */
+  .main-nav li{
+    width: 100%;
+  }
+  .main-nav .mainNavNuestrosProductos {
+  width: 100%;
+  }
+  /* FIN Menu Principal */
+
+  /* COMIENZO Productos Mas Vendidos / Vistos /  Divs Home */
+  .productosInicioUno{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosInicioDos{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosInicioTres{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosInicioCuatro{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosMasVendidosUno{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosMasVendidosDos{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosMasVendidosTres{
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosMasVistosUno {
+    width: 99%;
+    margin: 0.5%;
+  }
+  .productosMasVistosDos {
+    width: 99%;
+    margin: 0.5%;
+  }
+  /* FIN Productos Mas Vendidos / Vistos /  Divs Home */
+
+  /* COMIENZO Footer */
+  footer{
+    font-size: 10px;
+    height: 100px;
+  }
+  /* FIN Footer */
+}
+/* FIN @media 368px */

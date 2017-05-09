@@ -1,88 +1,319 @@
-* {
-  box-sizing: border-box;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
 }
 
-/* COMIENZO Contenedor General */
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Full-width inputs */
+.containerProd input[type=text] {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.containerProd button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.password {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+
+
+
+
+
+
+
 .containerGeneral {
-  max-width: 1920px;
+  max-width: 1600;
+}
+
+header {
+  position: relative;
+}
+
+/* Imagen Foto detras del header / Menu */
+.imageBanner, .imageBanner2{
+  width: 100%;
+}
+
+/* Div que contienen todos los menues */
+.menuTotal {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 35%;
+  top: 0;
+  opacity: 0.6;
+  background: #000000;
+  filter: alpha(opacity=60);
+}
+
+/* Comienzo Menu Footer */
+.menuFooter {
+  position: relative;
+  float: left;
+  width: 100%;
+  opacity: 0.6;
+  background: #000000;
+  filter: alpha(opacity=60);
+}
+.menuFooter .logoPrincipal img {
+  width: 130px;
+}
+.menuFooter ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;
+  display: flex;
+  flex-wrap: column;
 }
-/* FIN Contenedor General */
-
-.containerPrincipal {
-
+.menuFooter ul li {
+  width: 15%;
 }
-
-/* COMIENZO Body */
-body {
-
+.menuFooter ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
 }
-/* FIN Body */
-
-
-/* COMIENZO Header */
-header {
-  background-color: #232F3E;
+.menuFooter ul li a:hover{
+  text-decoration: underline;
+}
+.menuFoot {
+  position: absolute;
   width: 100%;
-  height: 100px;
+  top: 50px;
+  left: 30%;
+}
+.menufoot {
+  display: flex;
+  flex-direction: row;
+  top: 50px;
+  float: left;
   position: relative;
-
-}
-/* FIN Header */
-
-
-/* COMIENZO Logo */
-.logoPrincipal {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  width: 11%;
-  display: block;
+  width: 75%;
+  left: 50px;
 }
 
+.menufoot ul {
+  flex: 1;
+  flex-direction: row;
+  list-style: none;
+  margin: 0 0 4px 0;
+  padding: 2px;
+  text-align: center;
+}
+.menufoot li--visible {
+  display: flex;
+}
+.menufoot li {
+  background-color: transparent;
+
+}
+.menufoot li:hover {
+  opacity: 0.7;
+}
+.menufoot li a {
+  padding: 8px;
+
+  text-decoration: none;
+  font-size: 22px;
+}
+.menufoot li a:hover {
+  color: #e49327;
+  text-decoration: underline;
+}
+
+/* FIN Menu Footer */
+
+
+
+
+
+/* Logo Principal */
 .logoPrincipal img {
-  width: 200px;
-  height: 50px;
-  margin: 0;
+  width: 10%;
+  left: 50px;
+  float: left;
+  position: relative;
+  opacity: 1;
 }
-/* FIN Logo */
-
-
-/* COMIENZO Buscador */
-.buscador {
-  position: absolute;
-  top: 10px;
-  left: 260px;
-  width: 48%; /* 30 56*/
-
-}
-.buscador input {
-  border-radius: 50px;
-}
-.buscador button {
-  border-radius: 50px;
-  position: absolute;
-  top: -1px;
-  left: 460px;
-}
-.buscador img {
-
-}
-/* FIN Buscador */
-
 
 /* COMIENZO Menu Login */
 .main-login {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  position: absolute;
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  float: left;
   top: 10px;
-  right: 0;
-  width: 20%;
-  display: block;
+  left: 35px;
+  width: 90%;
 }
 .main-login ul {
   list-style: none;
@@ -94,388 +325,302 @@ header {
 }
 .main-login li a {
   color: #FFFFFF;
-  display: block;
   text-decoration: none;
   padding-right: 3em;
   padding-top: 0.2em;
+  margin-left: 20px;
   flex-grow: 1;
 }
 .main-login li a:hover {
-  color: grey;
+  color: #e49327;
   text-decoration: underline;
-}
-.formLogin {
-  color: #FFFFFF;
-  font-weight: 100;
-  font-size: 10px;
-}
-.formLogin input{
-  margin-right: 20px;
 }
 /* FIN Menu Login */
 
 
-/* COMIENZO MENU VERTICAL */
-.navVertical {
-  /*display:block;*/
-  width: 250px;
-  position: absolute;
-  top: 60px;
-  z-index: 10;
-}
-.nav li a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  width: 100%;
-}
-.nav {
-  margin: 0 0 0 1px;
-  padding: 0;
-  width: 100%;
-}
-.nav > li {
-  display: inline-block;
-  padding: 12px;
-  position: relative;
-  width: 100%;
-}
-.nav li > ul {
-  list-style-type: none;
-  display: none;
-  position: relative;
-}
-.nav li ul a{
-  font-size: 11px;
-}
-.nav li:hover {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #293B71;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-.nav li:hover a {
-  color: #000;
-}
-.nav li:hover > ul {
-  display: block;
-  top: 100%;
-  left: -5%;
-  width: 100%;
-}
-.nav li:hover > ul li {
-   padding: 10px;
-   margin-left: -30px;
-   background-color: #2c4c71;
-   /*width: 400px; Aca es para que el menu azul de adentro se agrande */
-   -moz-box-shadow: 7px 7px 7px #777777;
-   -webkit-box-shadow: 7px 7px 7px #777777;
-   box-shadow: 7px 7px 7px #777777;
-   border: 1px solid #a7b9ee;
-   border-radius: 5px;
-   -moz-border-radius: 5px;
-   -webkit-border-radius: 5px;
-}
-.nav li:hover > ul li a{
-  color: #FFFFFF;
-}
-.nav li:hover > ul li:hover {
-   text-decoration: underline;
-   color: #FFFFFF;
-   background-color: #294769;
-}
-/* FIN MENU VERTICAL */
-
-
-/* COMIENZO Menu Principal */
-.main-nav {
-  position: absolute;
-  bottom: 0;
-  left: 250px;
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-
-  display: block;
-}
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Comienzo Menu Principal */
+/* nav container */
+.flexy-nav {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  top: 30px;
+  float: left;
+  position: relative;
+  width: 75%;
+  left: 50px;
 }
-.main-nav li a {
-  color: #FFFFFF;
-  display: block;
-  text-decoration: none;
-  padding: .5em 1em;
-  flex-grow: 1;
+/* nav links */
+.flexy-nav__items {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 0 4px 0;
+  padding: 2px;
   text-align: center;
 }
-.main-nav li a:hover {
-  color: 	#A9A9A9;
+.flexy-nav__items--visible {
+  display: flex;
+}
+.flexy-nav__item {
+  background-color: #f1f1f1;
+  border-bottom: solid 1px #e7e7e7;
+}
+.flexy-nav__item:hover {
+  background-color: #5b3737;
+  opacity: 0.7;
+}
+.flexy-nav__item:last-child {
+  border-bottom: 0;
+}
+.flexy-nav__link {
+  padding: 8px;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+}
+.flexy-nav__link:hover {
+  color: #e49327;
   text-decoration: underline;
 }
 /* FIN Menu Principal */
 
 
-/* COMIENZO Carrito de compras */
-.carritoDeCompras {
-  float: right;
-  width: 3%;
-  height: 50px;
-  right: 50px;
-  top: 50px;
-  position: absolute;
-  display: block;
-}
-.carritoDeCompras img{
-  width: 50px;
-  height: 50px;
-}
-/* FIN Carrito de compras */
 
-/* COMIENZO Link Nuestros Productos para modo Celular */
-.main-nav .mainNavNuestrosProductos {
-display: none;
-}
-/* FIN Link Nuestros Productos para modo Celular */
-
-
-/* COMIENZO imagenPrincipal */
-.imagenPrincipal {
-  width: 100%;
-}
-/* FIN imagenPrincipal */
-
-
-/* COMIENZO H1, H2 , H3 ..... */
-h1 {
-  font-size: 40px;
-  text-align: center;
-  font-family: 'Dosis', sans-serif;
-  color: #232F3E;
-  -moz-box-shadow: 5px 5px 5px #777777;
-  -webkit-box-shadow: 5px 5px 5px #777777;
-  box-shadow: 5px 5px 5px #777777;
-  padding-bottom: 20px;
-}
-h2 {
-  font-size: 40px;
-  text-align: center;
-  font-weight: 300;
-  font-family: Tahoma, sans-serif;
-  color: #3a5e8f;
-  background-color: rgba(226, 217, 217, 0.69);
-}
-h3 {
-  font-size: 30px;
-  font-weight: 300;
-  font-family: 'Dosis', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-/* FIN H1, H2 , H3 ..... */
-
-/* COMIENZO Divs Individuales Productos Home */
-.productosInicioUno{
-  border: 2px solid white;
+/* Comienzo Menu Productos */
+/* nav container */
+.flexy-navProd {
+  display: flex;
+  flex-direction: column;
+  top: -10px;
   float: left;
-  width: 24%;
-  margin: 0.5% 0.5% 3.5% 0.5%;
-  border: 3px ridge #232F3E;
   position: relative;
-}
-.productosInicioUno img {
   width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.tituloProductosInicio {
+/* nav links */
+.flexy-nav__itemsProd {
+  display: inline-flex;
+  flex: 1;
+  flex-direction: column;
+  list-style: none;
+
+  padding: 2px;
   text-align: center;
-  width: 100%;
 }
-.tituloProductosInicio a{
+.flexy-nav__itemsProd--visible {
+  display: flex;
+}
+.flexy-nav__itemProd {
+  border-radius: 25px;
+  border: 2px solid grey;
+  background-color: #96c1cf;
+  opacity: 0.9;
+  margin-top: 1px;
+}
+.flexy-nav__itemProd:hover {
+  background-color: #5b3737;
+  opacity: 0.7;
+}
+.flexy-nav__itemProd:last-child {
+
+}
+.flexy-nav__linkProd {
+  padding: 1px;
+  display: block;
   text-decoration: none;
+  font-size: 22px;
+  color: #143558;
+  font-weight: 500;
 }
-.tituloProductosInicio a:hover{
+.flexy-nav__linkProd:hover {
+  color: #e49327;
   text-decoration: underline;
-  color: grey;
 }
-.descripcionProductosInicio p{
-  text-align: center;
+/* FIN Menu Productos */
+
+
+
+
+
+/* Comienzo Nuevos Productos HOME */
+.nuevosProductos, .cuadradosAlfajores {
   width: 100%;
+  background-color: #B6CED6;
+  margin-top: -10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.subNuevosProductos, .subCuadrados {
+  width: 100%;
+  text-align: center;
+}
+.nuevosProductos h2 {
+  text-align: center;
+}
+.nuevoProd_1, .nuevoProd_2, .nuevoProd_3, .nuevoProd_4 {
+  border-radius: 5px;
+  border: 1px solid #274b93;
+  display: inline-block;
+  width: 20%;
+  margin-right: 10px;
+}
+.imagennuevoProd_1 img, .imagennuevoProd_2 img, .imagennuevoProd_3 img, .imagennuevoProd_4 img, .cuadrado_1 img,
+.cuadrado_2 img, .cuadrado_3 img, .cuadrado_4 img {
+  width: 100%;
+}
+/* FIN Nuevos Productos HOME */
+
+
+/* Comienzo Pagina Productos Individual */
+.productoN {
+  width: 100%;
+  text-align: center;
+}
+
+.productoN h2 {
+  position: relative;
+  top: 0;
+  font-size: 45px;
+  font-weight: 600;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.prod_N {
+  border-radius: 5px;
+  border: 1px solid #274b93;
+  width: 30%;
+  float: left;
+  margin-bottom: 50px;
+
+}
+.prod_Descripcion {
+  border-radius: 5px;
+  border: 1px solid #274b93;
+  width: 65%;
+  float: left;
+
+}
+
+.imagenProd_N img {
+width: 100%;
+}
+.descripcionProducto {
   font-style: italic;
-}
-.precioProductosInicio {
-  width: 100%;
-}
-.precioProductosInicio p{
-  text-align: right;
-  font-weight: 900;
-  font-size: 24px;
-  color: red;
-  margin: 0;
-}
-.productosInicioDos{
-  border: 2px solid white;
+  text-align: left;
+  font-size: 20px;
   float: left;
-  width: 24%;
-  margin: 0.5%;
-  border: 3px ridge #232F3E;
-}
-.productosInicioDos img {
   width: 100%;
-}
-.productosInicioTres{
-  border: 2px solid white;
-  float: left;
-  width: 24%;
-  margin: 0.5%;
-  border: 3px ridge #232F3E;
-}
-.productosInicioTres img {
-  width: 100%;
-}
-.productosInicioCuatro{
-  border: 2px solid white;
-  float: left;
-  width: 24%;
-  margin: 0.5%;
-  border: 3px ridge #232F3E;
-}
-.productosInicioCuatro img {
-  width: 100%;
-}
-/* FIN Divs Individuales Productos Home */
-
-/* COMIENZO Titulo entre Divs Home - Mas Vendidos*/
-.masVendidos{
-  clear: both;
-}
-.masVendidos h2{
-  font-size: 40px;
-  text-align: center;
-  font-family: 'Dosis', sans-serif;
-  color: #232F3E;
-  -moz-box-shadow: 5px 5px 5px #777777;
-  -webkit-box-shadow: 5px 5px 5px #777777;
-  box-shadow: 5px 5px 5px #777777;
-  margin: 0;
-  padding: 0;
-}
-/* FIN Titulo entre Divs Home - Mas Vendidos*/
-
-/* COMIENZO Divs Home de Mas Vendidos */
-.productosMasVendidosUno{
-  border: 2px solid white;
-  float: left;
-  width: 32%;
-  margin: 2.5% 0 3.5% 0.5%;
-  border: 4px ridge #232F3E;
-  border-radius: 20px;
-}
-.productosMasVendidosUno img {
-  width: 100%;
-  border-radius: 15px;
-
-}
-.productosMasVendidosDos{
-  border: 2px solid white;
-  float: left;
-  width: 32%;
-  margin: 2.5% 0.5% 3.5% 0.5%;
-  border: 4px ridge #232F3E;
-  border-radius: 20px;
-}
-.productosMasVendidosDos img {
-  width: 100%;
-  border-radius: 15px;
-}
-.productosMasVendidosTres{
-  border: 2px solid white;
-  float: left;
-  width: 32%;
-  margin: 2.5% 0.5% 3.5% 0.5%;
-  border: 4px ridge #232F3E;
-  border-radius: 20px;
-}
-.productosMasVendidosTres img {
-  width: 100%;
-  border-radius: 15px;
-}
-/* FIN Divs Home de Mas Vendidos */
-
-/* COMIENZO Titulo entre Divs Home - Mas Vistos*/
-.masVistos{
-  clear: both;
-}
-.masVistos h2{
-  font-size: 40px;
-  text-align: center;
-  font-family: 'Dosis', sans-serif;
-  color: #232F3E;
-  -moz-box-shadow: 5px 5px 5px #777777;
-  -webkit-box-shadow: 5px 5px 5px #777777;
-  box-shadow: 5px 5px 5px #777777;
-  margin: 0;
-  padding: 0;
-}
-/* FIN Titulo entre Divs Home - Mas Vistos*/
-
-
-/* COMIENZO Divs Home de Mas Vistos */
-.productosMasVistosUno {
-  border: 2px solid white;
-  float: left;
-  width: 49%;
-  margin: 2.5% 0.5% 3.5% 0.5%;
-  border: 5px ridge #232F3E;
-}
-.productosMasVistosUno img {
-  width: 100%;
-}
-.productosMasVistosDos {
-  border: 2px solid white;
-  float: left;
-  width: 49%;
-  margin: 2.5% 0.5% 3.5% 0.5%;
-  border: 5px ridge #232F3E;
-}
-.productosMasVistosDos img {
-  width: 100%;
-}
-/* FIN Divs Home de Mas Vistos */
-
-
-/* COMIENZO Div Preguntas Frecuentes */
-.preguntasFrecuentes {
-  width: 70%;
-  border: 2px solid #293B71;
-  border-radius: 30px;
+  padding: 10px;
   margin: auto;
 }
-.pregunta {
-  font-family: monospace;
-  font-weight: 400;
-  font-size: 16px;
-  color: #0a0e38;
+
+/* FIN Pagina Productos Individual */
+
+
+
+/* Comienzo H1, H2, H3 .... */
+h2 {
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  color: #323358;
+  text-align: center;
+  margin-top: -5px;
 }
-.respuesta{
-  font-style: italic;
-  font-weight: 200;
-  font-family: monospace;
+h3 {
   font-size: 18px;
-  color: #633f0f;
+  letter-spacing: 0.1em;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  color: #323358;
+  text-align: center;
+}
+/* FIN H1, H2, H3 .... */
+
+
+/* Comienzo Precios Home */
+.precioHome {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #a85353;
+  text-align: center;
+  margin-bottom: 200px;
+}
+/* Fin Precios Home */
+
+/* Comienzo Agregar Carrito Home */
+.agregarCarrito {
+  border-radius: 10px;
+  border: 2px solid #e7cb9d;
+  text-align: center;
+  width: 70%;
+  padding: 5px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 34;
+  position: relative;
+  background-color: #3c9dbd;
+}
+.agregarCarrito a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-/* FIN Div Preguntas Frecuentes */
+.agregarCarrito a:hover {
+  color: #FFFFFF;
+}
+.agregarCarrito:hover {
+  background-color: #0287b3;
+  border-radius: 5px;
+}
+/* Fin Agregar Carrito Home */
+
+/* Comienzo Cuadrados / Alfajores Home */
+.cuadradosAlfajores {
+  width: 100%;
+  background-color: #B5BF63;
+}
+.cuadrado_1, .cuadrado_2, .cuadrado_3, .cuadrado_4 {
+  border-radius: 5px;
+  border: 1px solid #e7cb9d;
+  display: inline-block;
+  width: 20%;
+  margin-right: 10px;
+}
+/* FIN Cuadrados / Alfajores Home */
+
+
+/* Comienzo Comentarios Home */
+.comentarios {
+  position: relative;
+}
+.comentariosClientes {
+  width: 43%;
+  height: 40%;
+  opacity: 1;
+  background: transparent;
+  position: absolute;
+  border-radius: 10px;
+  top: 45%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+}
+.comentariosClientes p {
+  color: #323358;
+  text-align: center;
+  font-size: 20px;
+}
+/* FIN Comentarios Home */
 
 
 /* COMIENZO Tabla Formulario Registro */
@@ -514,303 +659,374 @@ legend {
   background: -o-linear-gradient(top, #a8cfce, #beeae9);
   background: -ms-linear-gradient(top, #a8cfce, #beeae9);
 }
+.formularioRegistro {
+  margin-bottom: 30px;
+}
 /* FIN Tabla Formulario Registro */
 
-
-/* COMIENZO Footer */
-footer {
-  font-family: Verdana, Geneva, sans-serif;
-  border-style: double; border-width: 4px;
-  border-radius: 40px 40px 0 0;
-  background-color: #232F3E;
-  clear: both;
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: 100;
-  font-size: 12px;
-  height: 70px;
+/* Comienzo Formulario Errores */
+.erroresformulario span {
+  color: red;
+  font-weight: 900;
+  font-style: italic;
+  border: 1px solid red;
 }
-footer p {
-  padding: 5px;
-}
-/* FIN Footer */
+/* FIN Formulario Errores */
 
 
 
-/* COMIENZO @media 1200px */
-@media only screen and (max-width : 1200px) {
-  /* COMIENZO buscador */
-  .buscador input {
-    width: 170px;
-    display: block;
-  }
-  .buscador button {
-    left: 175px;
-  }
-  /* FIN buscador */
-
-  /* COMIENZO Menu Login */
-  .main-login {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 12px;
-    width: 25%;
-  }
-  /* FIN Menu Login */
-
-  /* COMIENZO Menu Vertical */
-  .navVertical {
-    width: 250px;
-  }
-  .nav li a {
-    font-size: 12px;
-  }
-  /* FIN Menu Vertical */
-
-  /* COMIENZO Menu Principal */
-  .main-nav {
-    font-size: 12px;
-  }
-  /* FIN Menu Principal */
-
-  /* COMIENZO Descripcion y Titulo Divs Home */
-  .tituloProductosInicio a{
-    font-size: 24px;
-  }
-  .precioProductosInicio p{
-    font-size: 20px;
-  }
-  /* FIN Descripcion y Titulo Divs Home */
-}
-/* FIN @media 1200px */
 
 
-
-/* COMIENZO @media 992px */
-@media only screen and (max-width : 992px) {
-  /* COMIENZO Menu Principal */
-  .main-nav {
-    left: 250px;
-    width: 50%;
-  }
-  .main-nav li a{
-    border-right: 1px solid grey;
-    padding: 5px 20px 5px 20px;
-    margin: 0;
-  }
-  .main-nav li a:hover {
-    color: 	#A9A9A9;
-    text-decoration: underline;
-  }
-  /* FIN Menu Principal */
-
-  /* COMIENZO Menu Login */
-  .main-login {
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 10px;
-  }
-}
-/* FIN @media 992px */
-
-
-/* COMIENZO @media 768px */
-@media only screen and (max-width : 768px) {
-  /* COMIENZO header */
-  header {
-    height: 200px;
-  }
-  /* FIN header */
-
-  /* COMIENZO Logo */
-  .logoPrincipal {
-    width: 20%;
-  }
-  .logoPrincipal img {
-    width: 100px;
-    height: 30px;
-    margin: 0;
-  }
-  /* FIN Logo */
-
-  /* COMIENZO Buscador */
-  .buscador {
-  width: 220px;
-  left: 130px;
-  display: none;
-  }
-  /* FIN Buscador */
-
-  /* COMIENZO Menu Login */
-  .main-login {
-    left: 150px;
-    width: 45%;
-  }
-
-  /* FIN` Menu Login */
-
-  /* COMIENZO Carrito de compras */
-  .carritoDeCompras {
-    right: 20px;
-    top: 5px;
-    width: 10%;
-  }
-  /* FIN Carrito de compras */
-
-  /* COMIENZO Menu Vertical */
-  .navVertical {
-    display: none;
-  }
-  .main-nav .mainNavNuestrosProductos {
-  display: block;
-  width: 200%;
-  }
-  .mainNavVertical {
-    display: block;
-    left: 0;
-    flex-wrap: wrap;
-    width: 100%;
-    top: 96px;
-  }
-  .mainNavVertical li{
-    width: 100%
-  }
-  /* FIN Menu Vertical */
-
-  /* COMIENZO Menu Principal */
-  .main-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    font-family: Verdana, Geneva, sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: block;
-  }
-  .main-nav li{
-    width: 50%;
-  }
-  .main-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .main-nav li a {
-    color: #FFFFFF;
-    display: block;
-    text-decoration: none;
-    padding: 0.5em;
-    flex-grow: 1;
-    text-align: center;
-    border: 1px solid white;
-  }
-  .main-nav li a:hover {
-    color: 	#A9A9A9;
-    text-decoration: underline;
-  }
-  /* FIN Menu Principal */
-
-  /* COMIENZO Productos Divs Home */
-  .productosInicioUno{
-    width: 48%;
-    margin: 0.5%;
-  }
-  .productosInicioDos{
-    width: 48%;
-    margin: 0.5%;
-  }
-  .productosInicioTres{
-    width: 48%;
-    margin: 0.5%;
-  }
-  .productosInicioCuatro{
-    width: 48%;
-    margin: 0.5%;
-  }
-  /* FIN Productos Divs Home */
-
-}
-/* FIN @media 768px */
-
-
-
-/* COMIENZO @media 368px */
-@media only screen and (max-width : 368px) {
-  /* COMIENZO header */
-   header {
-    height: 285px;
-  }
-  /* FIN header */
-
-  /* COMIENZO Main Login */
-   .main-login {
-    left: 130px;
-    width: 20%;
-  }
-  /* FIN Main Login */
-
-  /* COMIENZO carritoDeCompras */
-  .carritoDeCompras {
-    right: 40px;
-  }
-  /* FIN carritoDeCompras */
-
-  /* COMIENZO Menu Principal */
-  .main-nav li{
-    width: 100%;
-  }
-  .main-nav .mainNavNuestrosProductos {
+/* Comienzo Productos */
+.productos {
   width: 100%;
-  }
-  /* FIN Menu Principal */
-
-  /* COMIENZO Productos Mas Vendidos / Vistos /  Divs Home */
-  .productosInicioUno{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosInicioDos{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosInicioTres{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosInicioCuatro{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosMasVendidosUno{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosMasVendidosDos{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosMasVendidosTres{
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosMasVistosUno {
-    width: 99%;
-    margin: 0.5%;
-  }
-  .productosMasVistosDos {
-    width: 99%;
-    margin: 0.5%;
-  }
-  /* FIN Productos Mas Vendidos / Vistos /  Divs Home */
-
-  /* COMIENZO Footer */
-  footer{
-    font-size: 10px;
-    height: 100px;
-  }
-  /* FIN Footer */
+  background-color: #B6CED6;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
-/* FIN @media 368px */
+.subproductos {
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+.prod_1, .prod_2, .prod_3, .prod_4 {
+  border-radius: 5px;
+  border: 1px solid #274b93;
+  display: inline-block;
+  width: 20%;
+  margin-right: 10px;
+}
+.imagenprod_1 img, .imagenprod_2 img, .imagenprod_3 img, .imagenprod_4 img {
+  width: 100%;
+}
+
+.subproductos:first-child {
+  margin-top: 0;
+}
+
+/* FIN Productos */
+
+
+
+/* Comienzo Precios Home */
+.precioHome {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  color: #a85353;
+  text-align: center;
+  margin-bottom: 200px;
+}
+/* Fin Precios Home */
+
+/* Comienzo Agregar Carrito Home */
+.agregarCarrito {
+  border-radius: 10px;
+  border: 2px solid #e7cb9d;
+  text-align: center;
+  width: 70%;
+  padding: 5px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 34;
+  position: relative;
+  background-color: #3c9dbd;
+}
+.agregarCarrito a {
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.agregarCarrito a:hover {
+  color: #FFFFFF;
+}
+.agregarCarrito:hover {
+  background-color: #0287b3;
+  border-radius: 5px;
+}
+/* Fin Agregar Carrito Home */
+
+
+
+
+@media (max-width: 1600px) {
+h3 {
+    font-size: 16px;
+  }
+}
+
+
+
+@media (max-width: 1280px) {
+h3 {
+  font-size: 14px;
+  }
+
+  .comentariosClientes {
+    width: 42%;
+  }
+  .comentariosClientes p {
+    font-size: 16px;
+  }
+
+  .agregarCarrito a {
+    font-size: 12px;
+  }
+  .descripcionProducto {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 968px) {
+  .comentariosClientes {
+    width: 40%;
+  }
+  .comentariosClientes p {
+    font-size: 12px;
+  }
+  .agregarCarrito a {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 12px;
+    }
+}
+
+
+/* media queries */
+@media (min-width: 768px) {
+  .flexy-nav {
+    flex-direction: row;
+  }
+
+  .flexy-nav__items {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+  }
+
+  .flexy-nav__item {
+    flex: 1;
+    margin-right: 4px;
+    border-bottom: none;
+  }
+
+  .flexy-nav__link {
+    padding: 0;
+    line-height: 48px;
+  }
+
+
+  .flexy-navProd {
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .flexy-nav__itemsProd {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 48px;
+  }
+
+  .flexy-nav__itemProd {
+    flex: 1;
+    margin-right: 4px;
+  }
+
+  .flexy-nav__linkProd {
+    padding: 0;
+    line-height: 48px;
+  }
+}
+
+/*Damos estilos al menú*/
+.nav {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  left: -220px; /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+  padding-top: 47px;
+  background-color: rgba(29, 33, 32, 1);
+  border-right: 4px solid rgba(114, 126, 3, 1);
+  transition: all .5s ease; /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+}
+   /*Estilos de los li del menú*/
+   .nav__item {
+     display: block;
+     width: 96%;
+     margin: 0 auto;
+     line-height: 2;
+     position: relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+     border-bottom: .5px solid rgba(59, 62, 61, 1);
+     border-top: .5px solid rgba(59, 62, 61, 1);
+     background-color: transparent;
+     font-family: Arial, sans-serif;
+     text-align: center;
+     color: rgba(221, 231, 228, 1);
+   }
+       /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+       .current:before {
+          content:"";
+          width: 0;
+          height: 0;
+          position: absolute; /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+          border-top: 17px solid transparent;
+          border-left: 15px solid #1D2120;
+          border-bottom: 17px solid transparent;
+          top: 0;
+          right: -15px; /*Lo posicionamos -15px a la derecha de su contenedor*/
+          z-index: 4; /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
+       }
+      /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+      .current:after {
+          content:"";
+          width: 0;
+          height: 0;
+          position: absolute;/*Le damos al after una posición absoluta relativa al li que lo contiene*/
+          border-top: 16.5px solid transparent;
+          border-left: 17px solid rgba(114, 126, 3, 1);
+          border-bottom: 17px solid transparent;
+          top: .5px;
+          right: -21px;
+          z-index: 1;  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+      }
+  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+  .menu-toogle {
+    position: absolute; /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height: 1.1;
+    text-align: center;
+    top: 6.5px; /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    left: 8px;
+    border-radius: 3px;
+    background-color: #142b25;
+    transition: all .5s ease; /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index: 10;
+  }
+    /*Añadimos la haburguesa y le damos unos estilos*/
+    .menu-toogle::before {
+      content:"☰";
+      font-size:32px;
+      color:white;
+      display: none;
+    }
+
+    /*Estos son los estilos que le dan la funcionalidad al menú*/
+    /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+    .checkbox {
+      display: none; /*Ocultamos el checkbox pues no nos interesa que se vea*/
+    }
+    .checkbox:checked ~ .nav {
+      left: 0; /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+      position: fixed; /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+    }
+    .checkbox:checked ~ .main-w {
+      margin-left: 200px; /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+    }
+    .checkbox:checked ~ .menu-toogle {
+      left: 208px;
+      position: fixed; /*Fijamos la hamburgues para que se desplace junto con el menú*/
+    }
+
+    .nav__itemSub {
+      display: block;
+      width: 96%;
+      margin: 0 auto;
+      line-height: 2;
+      position: relative; /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+      border-bottom: .5px solid rgba(59, 62, 61, 1);
+      border-top: .5px solid rgba(59, 62, 61, 1);
+      background-color: transparent;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: red;
+    }
+
+@media (max-width: 768px) {
+    .main-login {
+      top: 0;
+    }
+    .main-login li a {
+      font-size: 14px;
+    }
+    .menu-toogle::before {
+      display: block;
+    }
+    .nuevoProd_1, .nuevoProd_2, .nuevoProd_3, .nuevoProd_4, .cuadrado_1, .cuadrado_2, .cuadrado_3, .cuadrado_4 {
+      width: 48%;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .prod_1, .prod_2, .prod_3, .prod_4 {
+      width: 48%;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .comentariosClientes {
+      width: 43%;
+    }
+    .comentariosClientes p {
+      font-size: 10px;
+    }
+    .flexy-nav__itemProd {
+      border-radius: 0;
+    }
+
+    .menufoot {
+      top: 20px;
+      width: 30%;
+    }
+    .menufoot ul {
+      flex-direction: column;
+    }
+    .descripcionProducto {
+      font-size: 14px;
+    }
+    .productoN {
+      margin-bottom: 500px;
+    }
+
+}
+
+    @media (max-width: 320px) {
+        .main-login li a {
+          font-size: 10px;
+        }
+        .nuevoProd_1, .nuevoProd_2, .nuevoProd_3, .nuevoProd_4, .cuadrado_1, .cuadrado_2, .cuadrado_3, .cuadrado_4 {
+          width: 98%;
+          margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .prod_1, .prod_2, .prod_3, .prod_4 {
+          width: 98%;
+          margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        h2 {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 12px;
+        }
+        .menufoot ul li a{
+          font-size: 10px;
+        }
+        .descripcionProducto {
+          font-size: 10px;
+        }
+}
